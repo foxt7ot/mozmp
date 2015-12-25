@@ -11,4 +11,3 @@ dtv.config.path=:localconfig:version1/vpoint
 	../cst_pos/res/veriFone/veriFonePoint.properties
 	Do same under "TempSignatureDirectory" tag
 7)On your local drive where your project is stored. Goto sns_verifone directory and delete bin dir
-8)Clean your project and you are good to go.
