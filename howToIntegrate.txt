@@ -1,0 +1,14 @@
+1)Import sns_verifone project from the provided link
+2)Let's say your project is cst_pos, right click on it>Build path>Configure Build Path...>Under properties dialogue goto project tab>Add sns_verifone dependency
+3)Now goto sns_verifone>cust_config>version1 You will find vpoint directory, Copy it.
+4)Paste it under cst_pos>cust_config>version1>
+5)Add vpoint path dtv.config.path in system.properties like below shown:
+dtv.config.path=:localconfig:version1/vpoint
+6) Open SystemConfig.xml which is under your cst_pos/cust_config/version1/vpoint
+	Goto "DeviceSecurityFileName" tag and change path from 
+	res/veriFone/veriFonePoint.properties
+	 to
+	../cst_pos/res/veriFone/veriFonePoint.properties
+	Do same under "TempSignatureDirectory" tag
+7)On your local drive where your project is stored. Goto sns_verifone directory and delete bin dir
+8)Clean your project and you are good to go.
